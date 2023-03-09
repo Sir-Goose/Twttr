@@ -1,15 +1,13 @@
-text = input("Input: ")
-text = text.replace("a", "")
-text = text.replace("e", "")
-text = text.replace("i", "")
-text = text.replace("o", "")
-text = text.replace("u", "")
-text = text.replace("A", "")
-text = text.replace("E", "")
-text = text.replace("I", "")
-text = text.replace("O", "")
-text = text.replace("U", "")
-print("Output: " + text)
+vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+
+long_tweet = input("Input: ")
+
+for letter in long_tweet:
+    for vowel in vowels:
+        if letter == vowel:
+            long_tweet = long_tweet.replace(letter, "")
+
+print(long_tweet)
 
 
 
